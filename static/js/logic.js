@@ -69,12 +69,12 @@ function createMap(earthquakes) {
         collapses: false
     }).addTo(map);
 
-    function legendColor(d) {
-        return d > 5 ? "darkred" :
-            d > 4  ? "red" :
-            d > 3  ? "orange" :
-            d > 2  ? "yellow" :
-            d > 1  ? "#d1e231" :
+    function legendColor(mag) {
+        return mag > 5 ? "darkred" :
+            mag > 4  ? "red" :
+            mag > 3  ? "orange" :
+            mag > 2  ? "yellow" :
+            mag > 1  ? "#d1e231" :
                         "lightgreen";
     }
 
